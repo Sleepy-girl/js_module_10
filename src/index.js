@@ -1,14 +1,12 @@
-import './styles.css';
-import menu from './menu.json';
-import menuTemplate from './template.hbs';
-import {Theme} from './themes.js';
+import './css/styles.css';
+import {Theme} from './components/themes/themes.js';
+import './components/menu/menu.js';
+import './components/cart/cart';
+import 'basiclightbox/dist/basicLightbox.min.css';
 
-const menuRef = document.querySelector('.menu');
-const bodyRef = document.querySelector('body');
-const checkboxRef = document.getElementById('theme-switch-control');
 
-const markup = menuTemplate(menu);
-menuRef.insertAdjacentHTML('afterbegin', markup);
+export const bodyRef = document.querySelector('body');
+export const checkboxRef = document.getElementById('theme-switch-control');
 
 bodyRef.classList.add('light-theme');
 

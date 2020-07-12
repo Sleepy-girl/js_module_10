@@ -229,3 +229,38 @@ body.dark-theme {
 .button__icon {
   margin-right: 8px;
 }
+
+/* cart */
+.cart {
+  display: block;
+  height: 32px;
+  width: 32px;
+  background-image: url(../images/cart.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 30px;
+}
+
+/* modalCart */
+.modal {
+  color: rgb(0, 0, 0);
+  padding: 1.8rem 2.16rem 0.9rem;
+  width: 550px;
+  max-width: 1300px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cart-dish__item .cart-dish__item-block{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-tittle {
+  text-align: center;
+  text-transform: uppercase;
+  /* color: #2196f3; */
+}
